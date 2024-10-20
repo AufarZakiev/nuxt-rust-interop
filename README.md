@@ -1,75 +1,21 @@
-# Nuxt UI Minimal Starter
+### Vue 3 & Rust combined
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+This demo unites:
+- [Vue 3](https://vuejs.org/) (TS)
+- [Egui](https://github.com/emilk/egui) (Rust)
+- [Bundler](https://vitejs.dev/): Vite
+- Component library for Vue: [Quasar](https://quasar.dev/)
 
-## Setup
+#### Why is it cool
 
-Make sure to install the dependencies:
+Rust part is compiled into WASM. WASM-based graphics (in "Demo" tab) performs in 60 FPS. It could be used to render
+highly interactive components, e.g. editors, charts, etc.
 
-```bash
-# npm
-npm install
+Rust is also good at heavy computations. RustyAdder in "Demo" tab shows how data could be passed to Rust code and then the result goes back to JS.
 
-# pnpm
-pnpm install
+Vue is commonly used JS framework. It isolates Rusty part of the app and makes it easy to create other app parts.
+Vue's ecosystem (such as Quasar) could be used in full power.
 
-# yarn
-yarn install
+#### Demo
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Deployed to [Github pages](https://aufarzakiev.github.io/rust_scripter/)
