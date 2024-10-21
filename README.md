@@ -1,4 +1,4 @@
-### Vue 3 & Rust combined
+### Nuxt 3 & Rust combined
 
 This demo unites:
 - [Nuxt 3](https://nuxt.com/) (TS)
