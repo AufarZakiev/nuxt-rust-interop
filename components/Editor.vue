@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed, onMounted, ref } from 'vue';
-  import init from '~/assets/rust_scripter.js';
+  import init from '~/assets/rust/rust_scripter.js';
 
   const isReady = ref(false);
   const rustAdder = ref(null as null | Function)

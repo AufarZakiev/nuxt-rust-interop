@@ -1,0 +1,6 @@
+[build]
+target = "index.html"
+dist = "../assets/rust"
+filehash = false
+inject_scripts = false
+public_url = "/rust_scripter"
