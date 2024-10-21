@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "cd rust && trunk build --release && nuxt build",
+    "dev": "nuxt dev & cd rust && cargo watch -s \"trunk serve\"; fg",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,7 +14,9 @@
     "@nuxtjs/mdc": "^0.9.2",
     "@tailwindcss/typography": "^0.5.15",
     "nuxt": "^3.13.2",
-    "nuxt-quasar-ui": "^2.1.6"
+    "nuxt-quasar-ui": "^2.1.6",
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.1.6"
   },
   "dependencies": {
     "unplugin-vue-markdown": "^0.26.2"
